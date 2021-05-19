@@ -20,7 +20,7 @@ function App() {
           score={player.score}
         />
       ))}
-      <Button onClick={resetScores} />
+      <Button olor="white" isActive onClick={resetScores} />
       Reset Score
       <Button />
       <Button onClick={resetAll} />
