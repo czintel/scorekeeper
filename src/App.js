@@ -1,14 +1,17 @@
 import styled from 'styled-components/macro'
+import Button from './components/Button'
 
 export default function App() {
   return (
     <section className="App">
-      <GridWrapper>Scorekeeper</GridWrapper>
+      <AppGrid>
+        <Button />
+      </AppGrid>
     </section>
   )
 }
 
-const GridWrapper = styled.section`
+const AppGrid = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
