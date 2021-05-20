@@ -20,13 +20,11 @@ function App() {
           score={player.score}
         />
       ))}
-      <Button olor="white" isActive onClick={resetScores} />
-      Reset Score
-      <Button />
-      <Button onClick={resetAll} />
-      Reset All
-      <Button />
-      <PlayerForm onClick={createNewPlayer} />
+      <Button color="white" isActive onClick={resetScores}>
+        Reset Score
+      </Button>
+      <Button onClick={resetAll}>Reset All</Button>
+      <PlayerForm onSubmit={createNewPlayer} />
     </section>
   )
 

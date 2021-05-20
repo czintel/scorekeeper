@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Button from './Button'
 import styled from 'styled-components/macro'
 
 Player.propTypes = {
@@ -14,9 +15,9 @@ export default function Player({ name, onMinus, onPlus, score }) {
     <Wrapper>
       {name}{' '}
       <div>
-        <button onClick={onMinus}>-</button>
+        <Button onClick={onMinus}>-</Button>
         <output>{score}</output>
-        <button onClick={onPlus}>+</button>
+        <Button onClick={onPlus}>+</Button>
       </div>
     </Wrapper>
   )
