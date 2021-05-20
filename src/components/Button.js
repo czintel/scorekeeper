@@ -13,6 +13,7 @@ export default function Button(props) {
 
 const ButtonStyled = styled.button`
   padding: 10px 20px;
+  height: 40px;
   border: none;
   background: ${button => (button.isActive ? 'steelblue' : 'lightgray')};
   color: ${button => (button.isActive ? 'white' : 'black')};

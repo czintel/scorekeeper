@@ -1,11 +1,13 @@
 import styled from 'styled-components/macro'
-import Button from './components/Button'
+import Navigation from './components/Navigation'
+import CreatePage from './pages/CreatePage'
 
 export default function App() {
   return (
     <section className="App">
       <AppGrid>
-        <Button />
+        <CreatePage />
+        <Navigation />
       </AppGrid>
     </section>
   )
